@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/fragment_login_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/fragement_horizontal_margin"
+        android:layout_marginRight="@dimen/fragement_horizontal_margin"
+        android:background="@drawable/drawable_login"
+        android:gravity="center_vertical"
+        android:hint="@string/input_phone_number"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/fragment_horizontal_padding"
+        android:text="18255215889"
+        android:textColor="@color/text_color_hint"
+        android:textSize="@dimen/text_size_main"/>
+
+    <EditText
+        android:id="@+id/fragment_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/fragement_horizontal_margin"
+        android:layout_marginRight="@dimen/fragement_horizontal_margin"
+        android:layout_marginTop="@dimen/fragment_vertical_margin"
+        android:background="@drawable/drawable_login"
+        android:gravity="center_vertical"
+        android:hint="@string/input_password"
+        android:text="111111"
+        android:inputType="numberPassword"
+        android:paddingLeft="@dimen/fragment_horizontal_padding"
+        android:textColor="@color/text_color_hint"
+        android:textSize="@dimen/text_size_main"/>
+
+    <Button
+        android:id="@+id/fragment_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/fragement_horizontal_margin"
+        android:layout_marginRight="@dimen/fragement_horizontal_margin"
+        android:layout_marginTop="@dimen/fragement_horizontal_margin"
+        android:background="@drawable/drawable_login_button"
+        android:gravity="center"
+        android:text="@string/fragment_login"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_main"/>
+
+</LinearLayout>
