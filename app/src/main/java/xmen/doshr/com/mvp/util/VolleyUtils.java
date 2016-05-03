@@ -22,8 +22,6 @@ public class VolleyUtils
 
     }
 
-
-
     //单例模式
     public static VolleyUtils getInstance()
     {
