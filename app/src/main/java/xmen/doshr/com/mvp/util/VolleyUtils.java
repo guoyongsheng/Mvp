@@ -6,6 +6,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
+import xmen.doshr.com.mvp.base.OkHttpStack;
+
 /**
  * Created by wesley on 2016/4/28.
  * 网络请求工具类 --- volley
@@ -45,7 +47,7 @@ public class VolleyUtils
         }
         if (requestQueue == null)
         {
-            requestQueue = Volley.newRequestQueue(context.getApplicationContext());
+            requestQueue = Volley.newRequestQueue(context.getApplicationContext(), new OkHttpStack());
         }
         return requestQueue;
     }

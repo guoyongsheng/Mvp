@@ -2,6 +2,7 @@ package xmen.doshr.com.mvp.base;
 
 import android.app.Application;
 
+import com.facebook.stetho.Stetho;
 import com.squareup.leakcanary.LeakCanary;
 
 /**
@@ -14,5 +15,6 @@ public class BaseApplication extends Application
     {
         super.onCreate();
         LeakCanary.install(this);
+        Stetho.initializeWithDefaults(this);
     }
 }
